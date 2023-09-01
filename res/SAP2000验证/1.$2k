@@ -1,0 +1,299 @@
+File C:\Users\RichardoGu\Desktop\1\1.$2k was saved on m/d/yy at h:mm:ss
+ 
+TABLE:  "ACTIVE DEGREES OF FREEDOM"
+   UX=Yes   UY=Yes   UZ=Yes   RX=Yes   RY=Yes   RZ=Yes
+ 
+TABLE:  "ANALYSIS OPTIONS"
+   Solver=Advanced   SolverProc=Auto   Force32Bit=No   StiffCase=None   GeomMod=None   HingeOpt="In Elements"
+ 
+TABLE:  "AUTO WAVE 3 - WAVE CHARACTERISTICS - GENERAL"
+   WaveChar=Default   WaveType="From Theory"   KinFactor=1   SWaterDepth=45   WaveHeight=18   WavePeriod=12   WaveTheory=Linear
+ 
+TABLE:  "CASE - DIRECT HISTORY 1 - GENERAL"
+   Case=ELCENTRO   OutSteps=1600   StepSize=0.02
+   Case=ELCENTRO-P   OutSteps=1600   StepSize=0.02
+ 
+TABLE:  "CASE - DIRECT HISTORY 2 - LOAD ASSIGNMENTS"
+   Case=ELCENTRO   LoadType="Load pattern"   LoadName=ELCENTRO   Function=FUNC1   LoadSF=1   TimeFactor=1   ArrivalTime=0
+   Case=ELCENTRO-P   LoadType="Load pattern"   LoadName=ELCENTRO   Function=FUNC1   LoadSF=1   TimeFactor=1   ArrivalTime=0
+ 
+TABLE:  "CASE - DIRECT HISTORY 3 - VISCOUS PROPORTIONAL DAMPING"
+   Case=ELCENTRO   MassCoeff=0.0932877539758264   StiffCoeff=0.0216672388349096
+   Case=ELCENTRO-P   MassCoeff=0.0932877539758264   StiffCoeff=0.0216672388349096
+ 
+TABLE:  "CASE - DIRECT HISTORY 4 - INTEGRATION PARAMETERS"
+   Case=ELCENTRO   IntMethod=Newmark   Gamma=0.5   Beta=0.25
+   Case=ELCENTRO-P   IntMethod=Newmark   Gamma=0.5   Beta=0.25
+ 
+TABLE:  "CASE - DIRECT HISTORY 5 - NONLINEAR PARAMETERS"
+   Case=ELCENTRO-P   GeoNonLin=None   DTMax=0   DTMin=0   UseEvStep=No   MaxIterCS=10   MaxIterNR=40   ItConvTol=0.0001   UseLineSrch=Yes   LSPerIter=20   LSTol=0.1   LSStepFact=1.618
+ 
+TABLE:  "CASE - MODAL 1 - GENERAL"
+   Case=MODAL   ModeType=Eigen   MaxNumModes=12   MinNumModes=1   EigenShift=0   EigenCutoff=0   EigenTol=1E-09   AutoShift=Yes
+ 
+TABLE:  "CASE - STATIC 1 - LOAD ASSIGNMENTS"
+   Case=DEAD   LoadType="Load pattern"   LoadName=DEAD   LoadSF=1
+ 
+TABLE:  "CONNECTIVITY - LINK"
+   Link=4   JointI=4   JointJ=1   GUID=96ee80d0-a164-45df-b273-0d7a852bf34a
+   Link=5   JointI=1   JointJ=2   GUID=b633cc1f-f0b8-4df0-9bc6-50978541660c
+   Link=6   JointI=2   JointJ=3   GUID=ae5ba9e5-dfd5-40b4-8adb-ebd6f3da3d93
+ 
+TABLE:  "COORDINATE SYSTEMS"
+   Name=GLOBAL   Type=Cartesian   X=0   Y=0   Z=0   AboutZ=0   AboutY=0   AboutX=0
+ 
+TABLE:  "DATABASE DOCUMENTATION"
+ 
+TABLE:  "DATABASE FORMAT TYPES"
+   UnitsCurr=Yes   OverrideE=No
+ 
+TABLE:  "FUNCTION - PLOT FUNCTIONS"
+   PlotFunc="Input Energy"   Type=Energy   Component=Input   Mode=All
+   PlotFunc=Joint1   Type=Joint   ObjectLabel=1   Component=RelDispU1   Mode=All
+ 
+TABLE:  "FUNCTION - POWER SPECTRAL DENSITY - USER"
+   Name=UNIFPSD   Frequency=0   Value=1
+   Name=UNIFPSD   Frequency=1   Value=1
+ 
+TABLE:  "FUNCTION - RESPONSE SPECTRUM - USER"
+   Name=UNIFRS   Period=0   Accel=1   FuncDamp=0.05
+   Name=UNIFRS   Period=1   Accel=1
+ 
+TABLE:  "FUNCTION - STEADY STATE - USER"
+   Name=UNIFSS   Frequency=0   Value=1
+   Name=UNIFSS   Frequency=1   Value=1
+ 
+TABLE:  "FUNCTION - TIME HISTORY - FROM FILE"
+   Name=FUNC1   HeaderLines=0   PrefixChars=0   PtsPerLine=1   DataType="Equal Interval"   FormatType=Free   Interval=0.02   FileName=c:\users\richardogu\desktop\新建文本文档.txt
+ 
+TABLE:  "FUNCTION - TIME HISTORY - USER"
+   Name=RAMPTH   Time=0   Value=0
+   Name=RAMPTH   Time=1   Value=1
+   Name=RAMPTH   Time=4   Value=1
+   Name=UNIFTH   Time=0   Value=1
+   Name=UNIFTH   Time=1   Value=1
+ 
+TABLE:  "GRID LINES"
+   CoordSys=GLOBAL   AxisDir=X   GridID=A   XRYZCoord=0   LineType=Primary   LineColor=Gray8Dark   Visible=Yes   BubbleLoc=End   AllVisible=Yes   BubbleSize=1.25
+   CoordSys=GLOBAL   AxisDir=Y   GridID=1   XRYZCoord=0   LineType=Primary   LineColor=Gray8Dark   Visible=Yes   BubbleLoc=Start
+   CoordSys=GLOBAL   AxisDir=Z   GridID=Z1   XRYZCoord=0   LineType=Primary   LineColor=Gray8Dark   Visible=Yes   BubbleLoc=End
+   CoordSys=GLOBAL   AxisDir=Z   GridID=Z2   XRYZCoord=3   LineType=Primary   LineColor=Gray8Dark   Visible=Yes   BubbleLoc=End
+   CoordSys=GLOBAL   AxisDir=Z   GridID=Z3   XRYZCoord=6   LineType=Primary   LineColor=Gray8Dark   Visible=Yes   BubbleLoc=End
+ 
+TABLE:  "GROUPS 1 - DEFINITIONS"
+   GroupName=ALL   Selection=Yes   SectionCut=Yes   Steel=Yes   Concrete=Yes   Aluminum=Yes   ColdFormed=Yes   Stage=Yes   Bridge=Yes   AutoSeismic=No   AutoWind=No   SelDesSteel=No   SelDesAlum=No   SelDesCold=No   MassWeight=Yes   Color=Red
+ 
+TABLE:  "JOINT ADDED MASS ASSIGNMENTS"
+   Joint=1   CoordSys=Global   Mass1=2762   Mass2=0   Mass3=0   MMI1=0   MMI2=0   MMI3=0
+   Joint=2   CoordSys=Global   Mass1=2760   Mass2=0   Mass3=0   MMI1=0   MMI2=0   MMI3=0
+   Joint=3   CoordSys=Global   Mass1=2300   Mass2=0   Mass3=0   MMI1=0   MMI2=0   MMI3=0
+ 
+TABLE:  "JOINT COORDINATES"
+   Joint=1   CoordSys=GLOBAL   CoordType=Cartesian   XorR=0   Y=0   Z=3   SpecialJt=Yes   GUID=344e1b43-d747-4f7e-aea8-ad8cd32c8a60
+   Joint=2   CoordSys=GLOBAL   CoordType=Cartesian   XorR=0   Y=0   Z=6   SpecialJt=Yes   GUID=408a2fe2-a2c5-4a4d-a391-87926343e7be
+   Joint=3   CoordSys=GLOBAL   CoordType=Cartesian   XorR=0   Y=0   Z=9   SpecialJt=Yes   GUID=b2f9ddf1-e2d4-4056-9c0f-437911c06070
+   Joint=4   CoordSys=GLOBAL   CoordType=Cartesian   XorR=0   Y=0   Z=0   SpecialJt=Yes   GUID=6f8cdb13-16bf-473f-ba21-be352592c4a3
+ 
+TABLE:  "JOINT LOADS - FORCE"
+   Joint=1   LoadPat=ELCENTRO   CoordSys=GLOBAL   F1=2762   F2=0   F3=0   M1=0   M2=0   M3=0   GUID=9d689969-0a27-487e-a22a-b26b547ba4cc
+ 
+TABLE:  "JOINT PATTERN DEFINITIONS"
+   Pattern=Default
+ 
+TABLE:  "JOINT RESTRAINT ASSIGNMENTS"
+   Joint=4   U1=Yes   U2=Yes   U3=Yes   R1=Yes   R2=Yes   R3=Yes
+ 
+TABLE:  "LINK PROPERTY ASSIGNMENTS"
+   Link=4   LinkProp=24850p   LinkFDProp=None   PropMod=1
+   Link=5   LinkProp=19210p   LinkFDProp=None   PropMod=1
+   Link=6   LinkProp=15220p   LinkFDProp=None   PropMod=1
+ 
+TABLE:  "LINK PROPERTY DEFINITIONS 01 - GENERAL"
+   Link=15220   LinkType=Linear   Mass=0   Weight=0   RotInert1=0   RotInert2=0   RotInert3=0   DefLength=1   DefArea=1   PDM2I=0   PDM2J=0   PDM3I=0   PDM3J=0   StiffDFact=1   Color=Gray8Dark   Notes="Added 2023/8/29 19:34:44"
+   Link=15220p   LinkType="MultiLinear Plastic"   Mass=0   Weight=0   RotInert1=0   RotInert2=0   RotInert3=0   DefLength=1   DefArea=1   PDM2I=0   PDM2J=0   PDM3I=0   PDM3J=0   StiffLOpt="Effective from Zero"   StiffDOpt=Initial _
+        StiffDFact=1   Color=Cyan   Notes="Added 2023/8/29 19:58:04"
+   Link=19210   LinkType=Linear   Mass=0   Weight=0   RotInert1=0   RotInert2=0   RotInert3=0   DefLength=1   DefArea=1   PDM2I=0   PDM2J=0   PDM3I=0   PDM3J=0   StiffDFact=1   Color=Yellow   Notes="Added 2023/8/29 19:34:33"
+   Link=19210p   LinkType="MultiLinear Plastic"   Mass=0   Weight=0   RotInert1=0   RotInert2=0   RotInert3=0   DefLength=1   DefArea=1   PDM2I=0   PDM2J=0   PDM3I=0   PDM3J=0   StiffLOpt="Effective from Zero"   StiffDOpt=Initial _
+        StiffDFact=1   Color=Green   Notes="Added 2023/8/29 19:57:17"
+   Link=24850   LinkType=Linear   Mass=0   Weight=0   RotInert1=0   RotInert2=0   RotInert3=0   DefLength=1   DefArea=1   PDM2I=0   PDM2J=0   PDM3I=0   PDM3J=0   StiffDFact=1   Color=Magenta   Notes="Added 2023/8/29 19:33:58"
+   Link=24850p   LinkType="MultiLinear Plastic"   Mass=0   Weight=0   RotInert1=0   RotInert2=0   RotInert3=0   DefLength=1   DefArea=1   PDM2I=0   PDM2J=0   PDM3I=0   PDM3J=0   StiffLOpt="Effective from Zero"   StiffDOpt=Initial _
+        StiffDFact=1   Color=Blue   Notes="Added 2023/8/29 19:52:51"
+ 
+TABLE:  "LINK PROPERTY DEFINITIONS 02 - LINEAR"
+   Link=15220   DOF=U1   Fixed=Yes
+   Link=15220   DOF=U2   Fixed=No   TransKE=15220   TransCE=0   DJ=0
+   Link=15220   DOF=U3   Fixed=Yes
+   Link=15220   DOF=R1   Fixed=Yes
+   Link=15220   DOF=R2   Fixed=Yes
+   Link=15220   DOF=R3   Fixed=Yes
+   Link=19210   DOF=U1   Fixed=Yes
+   Link=19210   DOF=U2   Fixed=No   TransKE=19210   TransCE=0   DJ=0
+   Link=19210   DOF=U3   Fixed=Yes
+   Link=19210   DOF=R1   Fixed=Yes
+   Link=19210   DOF=R2   Fixed=Yes
+   Link=19210   DOF=R3   Fixed=Yes
+   Link=24850   DOF=U1   Fixed=Yes
+   Link=24850   DOF=U2   Fixed=No   TransKE=24850   TransCE=0   DJ=0
+   Link=24850   DOF=U3   Fixed=Yes
+   Link=24850   DOF=R1   Fixed=Yes
+   Link=24850   DOF=R2   Fixed=Yes
+   Link=24850   DOF=R3   Fixed=Yes
+ 
+TABLE:  "LINK PROPERTY DEFINITIONS 11 - MULTILINEAR PLASTIC"
+   Link=15220p   DOF=U1   Fixed=Yes
+   Link=15220p   DOF=U2   Fixed=No   NonLinear=Yes   TransKE=0   TransCE=0   DJ=0   HysType=Kinematic   Force=-900   Displ=-0.1
+   Link=15220p   DOF=U2   Force=-900   Displ=-0.0591
+   Link=15220p   DOF=U2   Force=0   Displ=0
+   Link=15220p   DOF=U2   Force=900   Displ=0.0591
+   Link=15220p   DOF=U2   Force=900   Displ=0.1
+   Link=15220p   DOF=U3   Fixed=Yes
+   Link=15220p   DOF=R1   Fixed=Yes
+   Link=15220p   DOF=R2   Fixed=Yes
+   Link=15220p   DOF=R3   Fixed=Yes
+   Link=19210p   DOF=U1   Fixed=Yes
+   Link=19210p   DOF=U2   Fixed=No   NonLinear=Yes   TransKE=0   TransCE=0   DJ=0   HysType=Kinematic   Force=-900   Displ=-0.1
+   Link=19210p   DOF=U2   Force=-900   Displ=-0.0469
+   Link=19210p   DOF=U2   Force=0   Displ=0
+   Link=19210p   DOF=U2   Force=900   Displ=0.0469
+   Link=19210p   DOF=U2   Force=900   Displ=0.1
+   Link=19210p   DOF=U3   Fixed=Yes
+   Link=19210p   DOF=R1   Fixed=Yes
+   Link=19210p   DOF=R2   Fixed=Yes
+   Link=19210p   DOF=R3   Fixed=Yes
+   Link=24850p   DOF=U1   Fixed=Yes
+   Link=24850p   DOF=U2   Fixed=No   NonLinear=Yes   TransKE=0   TransCE=0   DJ=0   HysType=Kinematic   Force=-900   Displ=-0.05
+   Link=24850p   DOF=U2   Force=-900   Displ=-0.0362
+   Link=24850p   DOF=U2   Force=0   Displ=0
+   Link=24850p   DOF=U2   Force=900   Displ=0.0362
+   Link=24850p   DOF=U2   Force=900   Displ=0.05
+   Link=24850p   DOF=U3   Fixed=Yes
+   Link=24850p   DOF=R1   Fixed=Yes
+   Link=24850p   DOF=R2   Fixed=Yes
+   Link=24850p   DOF=R3   Fixed=Yes
+ 
+TABLE:  "LOAD CASE DEFINITIONS"
+   Case=DEAD   Type=LinStatic   InitialCond=Zero   DesTypeOpt="Prog Det"   DesignType=Dead   DesActOpt="Prog Det"   DesignAct=Non-Composite   AutoType=None   RunCase=Yes   GUID=3a3eae67-bb4b-4124-88f0-cde144d481da
+   Case=MODAL   Type=LinModal   InitialCond=Zero   DesTypeOpt="Prog Det"   DesignType=Other   DesActOpt="Prog Det"   DesignAct=Other   AutoType=None   RunCase=Yes   GUID=e5e2dd2e-4285-4e08-a765-7a8d6f0a820a
+   Case=ELCENTRO   Type=LinDirHist   InitialCond=Zero   DesTypeOpt="Prog Det"   DesignType=Other   DesActOpt="Prog Det"   DesignAct="Short-Term Composite"   AutoType=None   RunCase=Yes   GUID=23aaca3b-6af5-4c30-85be-e35c779d6ea2
+   Case=ELCENTRO-P   Type=NonDirHist   InitialCond=Zero   DesTypeOpt="Prog Det"   DesignType=Other   DesActOpt="Prog Det"   DesignAct="Short-Term Composite"   AutoType=None   RunCase=Yes   GUID=3f1d9606-62e6-4868-a609-cfe3cfc92d8e
+ 
+TABLE:  "LOAD PATTERN DEFINITIONS"
+   LoadPat=DEAD   DesignType=Dead   SelfWtMult=1   GUID=b8092184-c67d-443d-a254-27174e6f7b64
+   LoadPat=ELCENTRO   DesignType=Other   SelfWtMult=0   GUID=9402e5a0-7553-4603-a48b-6f64db787900   Notes="Added 2023/8/29 19:38:45"
+ 
+TABLE:  "MASS SOURCE"
+   MassSource=MSSSRC1   Elements=Yes   Masses=Yes   Loads=No   IsDefault=Yes
+ 
+TABLE:  "MATERIAL PROPERTIES 01 - GENERAL"
+   Material=4000Psi   Type=Concrete   Grade="f'c 4000 psi"   SymType=Isotropic   TempDepend=No   Color=Red   Notes="Customary f'c 4000 psi 2023/8/29 19:32:43"
+   Material=A992Fy50   Type=Steel   Grade="Grade 50"   SymType=Isotropic   TempDepend=No   Color=Cyan   Notes="ASTM A992 Grade 50 2023/8/29 19:32:43"
+ 
+TABLE:  "MATERIAL PROPERTIES 02 - BASIC MECHANICAL PROPERTIES"
+   Material=4000Psi   UnitWeight=23563.1216161854   UnitMass=2402.76960558926   E1=24855578060.0518   G12=10356490858.3549   U12=0.2   A1=9.89999952793124E-06
+   Material=A992Fy50   UnitWeight=76972.8639422648   UnitMass=7849.04737995992   E1=199947978795.958   G12=76903068767.676   U12=0.3   A1=1.16999994421006E-05
+ 
+TABLE:  "MATERIAL PROPERTIES 03A - STEEL DATA"
+   Material=A992Fy50   Fy=344737894.475789   Fu=448159262.818526   EffFy=379211683.923368   EffFu=492975189.100378   SSCurveOpt=Simple   SSHysType=Kinematic   SHard=0.015   SMax=0.11   SRup=0.17   FinalSlope=-0.1
+ 
+TABLE:  "MATERIAL PROPERTIES 03B - CONCRETE DATA"
+   Material=4000Psi   Fc=27579031.5580631   eFc=27579031.5580631   LtWtConc=No   SSCurveOpt=Mander   SSHysType=Takeda   SFc=0.00221914   SCap=0.005   FinalSlope=-0.1   FAngle=0   DAngle=0
+ 
+TABLE:  "MATERIAL PROPERTIES 06 - DAMPING PARAMETERS"
+   Material=4000Psi   ModalRatio=0   VisMass=0   VisStiff=0   HysMass=0   HysStiff=0
+   Material=A992Fy50   ModalRatio=0   VisMass=0   VisStiff=0   HysMass=0   HysStiff=0
+ 
+TABLE:  "OPTIONS - COLORS - DISPLAY"
+   DeviceType=Screen   Points=Blue   LinesFrame=Blue   LinesFrmDL=Blue   LinesCable=Green   LinesTendon=Green   SpringLinks=Green   Restraints=Green   Releases=Green   Axes=Cyan   Text=Black   ShadowLines=Gray8Dark   GuideLines=Gray8Dark _
+        Highlight=Red   Selection=10504778   AreaFillBot=Red   AreaFillTop=16744703   AreaFillSd=Red   AreaEdge=DarkRed   SolidF1=Red   SolidF2=Blue   SolidF3=Green   SolidF4=Yellow   SolidF5=White   SolidF6=Cyan   SolidEdge=DarkRed _
+        Floor=Gray4   Background=White   BGLowLeft=White   BGLowRight=White   BGUpRight=White   Darkness=0.5
+   DeviceType=Printer   Points=Gray8Dark   LinesFrame=Black   LinesFrmDL=Gray4   LinesCable=Black   LinesTendon=Black   SpringLinks=Gray8Dark   Restraints=Gray8Dark   Releases=Gray4   Axes=Black   Text=Black   ShadowLines=Gray4 _
+        GuideLines=Gray4   Highlight=Black   Selection=Black   AreaFillBot=Gray4   AreaFillTop=Gray8Dark   AreaFillSd=Gray4   AreaEdge=Black   SolidF1=Gray1Light   SolidF2=Gray2   SolidF3=Gray3   SolidF4=Gray4   SolidF5=Gray5 _
+        SolidF6=Gray6   SolidEdge=Black   Floor=Gray4   Background=White   BGLowLeft=White   BGLowRight=White   BGUpRight=White   Darkness=0.5
+   DeviceType="Color Printer"   Points=Blue   LinesFrame=Blue   LinesFrmDL=Blue   LinesCable=Green   LinesTendon=Green   SpringLinks=Green   Restraints=Green   Releases=Green   Axes=Cyan   Text=Black   ShadowLines=Gray8Dark _
+        GuideLines=Gray8Dark   Highlight=Red   Selection=10504778   AreaFillBot=Red   AreaFillTop=16744703   AreaFillSd=Red   AreaEdge=DarkRed   SolidF1=Red   SolidF2=Blue   SolidF3=Green   SolidF4=Yellow   SolidF5=White   SolidF6=Cyan _
+        SolidEdge=DarkRed   Floor=Gray4   Background=White   BGLowLeft=White   BGLowRight=White   BGUpRight=White   Darkness=0.5
+ 
+TABLE:  "OPTIONS - COLORS - OUTPUT"
+   DeviceType=Screen   Contour1=13107400   Contour2=6553828   Contour3=Red   Contour4=16639   Contour5=Orange   Contour6=43775   Contour7=54527   Contour8=Yellow   Contour9=65408   Contour10=Green   Contour11=8453888   Contour12=Cyan _
+        Contour13=16755200   Contour14=16733440   Contour15=Blue   Transpare=0.5   Ratio1=Cyan   Ratio2=Green   Ratio3=Yellow   Ratio4=Orange   Ratio5=Red   RatioNotD=Gray4   RatioNotC=Red   RatioVal1=0.5   RatioVal2=0.7   RatioVal3=0.9 _
+        RatioVal4=1   DFillPos=Blue   DFillNeg=Red   DFillRPos=Green   DFillRNeg=Green
+   DeviceType=Printer   Contour1=Black   Contour2=3158064   Contour3=4210752   Contour4=5263440   Contour5=6316128   Contour6=7368816   Contour7=Gray8Dark   Contour8=Gray7   Contour9=Gray6   Contour10=Gray5   Contour11=Gray4 _
+        Contour12=Gray3   Contour13=Gray2   Contour14=Gray1Light   Contour15=White   Transpare=0   Ratio1=Gray2   Ratio2=Gray4   Ratio3=Gray8Dark   Ratio4=4210752   Ratio5=Black   RatioNotD=Gray4   RatioNotC=Black   RatioVal1=0.5 _
+        RatioVal2=0.7   RatioVal3=0.9   RatioVal4=1   DFillPos=Gray8Dark   DFillNeg=Gray8Dark   DFillRPos=4210752   DFillRNeg=4210752
+   DeviceType="Color Printer"   Contour1=13107400   Contour2=6553828   Contour3=Red   Contour4=16639   Contour5=Orange   Contour6=43775   Contour7=54527   Contour8=Yellow   Contour9=65408   Contour10=Green   Contour11=8453888 _
+        Contour12=Cyan   Contour13=16755200   Contour14=16733440   Contour15=Blue   Transpare=0   Ratio1=Cyan   Ratio2=Green   Ratio3=Yellow   Ratio4=Orange   Ratio5=Red   RatioNotD=Gray4   RatioNotC=Red   RatioVal1=0.5   RatioVal2=0.7 _
+        RatioVal3=0.9   RatioVal4=1   DFillPos=Blue   DFillNeg=Red   DFillRPos=Green   DFillRNeg=Green
+ 
+TABLE:  "PREFERENCES - ALUMINUM DESIGN - AA-ASD 2000"
+   THDesign=Envelopes   FrameType="Moment Frame"   SRatioLimit=1   MaxIter=1   LatFact=1.33333333333333   UseLatFact=No   Bridge=No
+ 
+TABLE:  "PREFERENCES - COLD FORMED DESIGN - AISI-ASD96"
+   THDesign=Envelopes   FrameType="Braced Frame"   SRatioLimit=1   MaxIter=1   OmegaBS=1.67   OmegaBUS=1.67   OmegaBLTB=1.67   OmegaVS=1.67   OmegaVNS=1.5   OmegaT=1.67   OmegaC=1.8
+ 
+TABLE:  "PREFERENCES - CONCRETE DESIGN - CHINESE 2010"
+   THDesign=Envelopes   NumCurves=24   NumPoints=11   PatLLF=0   UFLimit=1   StrucSys=Frame-Shearwall   TallBldg=Yes   FieldType=II   SeisGrade="Grade II"   ImpFactor=1   ColDesign="Appendix E"
+ 
+TABLE:  "PREFERENCES - DIMENSIONAL"
+   MergeTol=0.001   FineGrid=0.25   Nudge=0.25   SelectTol=3   SnapTol=12   SLineThick=2   PLineThick=4   MaxFont=8   MinFont=3   AutoZoom=10   ShrinkFact=70   TextFileLen=240
+ 
+TABLE:  "PREFERENCES - STEEL DESIGN - CHINESE 2010"
+   THDesign=Envelopes   FrameType="NonSway Moment Frame, NMF"   PatLLF=0   SRatioLimit=1   MaxIter=1   TallBldg=Yes   Gamma0=1   IgnoreBoT=Yes   BeamMandN=No   CheckDefl=No   DLRat=120   SDLAndLLRat=120   LLRat=500   TotalRat=400   NetRat=500
+ 
+TABLE:  "PROGRAM CONTROL"
+   ProgramName=SAP2000   Version=21.0.2   CurrUnits="N, m, C"   SteelCode="Chinese 2010"   ConcCode="Chinese 2010"   AlumCode="AA-ASD 2000"   ColdCode=AISI-ASD96   RegenHinge=Yes
+ 
+TABLE:  "PROJECT INFORMATION"
+   Item="Company Name"   Data="Computers and Structures, Inc."
+   Item="Client Name"
+   Item="Project Name"
+   Item="Project Number"
+   Item="Model Name"
+   Item="Model Description"
+   Item="Revision Number"
+   Item="Frame Type"
+   Item=Engineer
+   Item=Checker
+   Item=Supervisor
+   Item="Issue Code"
+   Item="Design Code"
+ 
+TABLE:  "REBAR SIZES"
+   RebarID=#2   Area=3.2258E-05   Diameter=0.00635
+   RebarID=#3   Area=7.09675996154547E-05   Diameter=0.009525
+   RebarID=#4   Area=0.000129032001922727   Diameter=0.0127
+   RebarID=#5   Area=0.000199999601538181   Diameter=0.015875
+   RebarID=#6   Area=0.000283870398461819   Diameter=0.01905
+   RebarID=#7   Area=0.000387096015381813   Diameter=0.022225
+   RebarID=#8   Area=0.000509676413843632   Diameter=0.0254
+   RebarID=#9   Area=0.00064516   Diameter=0.0286512005329132
+   RebarID=#10   Area=0.00081935318769455   Diameter=0.0322579995155334
+   RebarID=#11   Area=0.00100644956308365   Diameter=0.0358139991521835
+   RebarID=#14   Area=0.00145161   Diameter=0.0430021989583969
+   RebarID=#18   Area=0.00258064   Diameter=0.0573277992248535
+   RebarID=10M   Area=0.000100000002655387   Diameter=0.011300000667572
+   RebarID=15M   Area=0.000200000005310774   Diameter=0.0159999999403954
+   RebarID=20M   Area=0.000300000017579794   Diameter=0.0194999997854233
+   RebarID=25M   Area=0.000500000022890568   Diameter=0.0252000016093254
+   RebarID=30M   Area=0.000700000008974075   Diameter=0.0299000008821487
+   RebarID=35M   Area=0.00100000004578114   Diameter=0.0357000011444092
+   RebarID=45M   Area=0.00150000010712624   Diameter=0.0437000003576279
+   RebarID=55M   Area=0.00250000007599831   Diameter=0.0564000033855438
+   RebarID=6d   Area=2.83000004149973E-05   Diameter=0.006000000166893
+   RebarID=8d   Area=5.02999995571375E-05   Diameter=0.00799999997019768
+   RebarID=10d   Area=7.85000013634562E-05   Diameter=0.00999999977350235
+   RebarID=12d   Area=0.000113000009249449   Diameter=0.012000000333786
+   RebarID=14d   Area=0.000154000010818839   Diameter=0.0140000008940697
+   RebarID=16d   Area=0.000201000015431643   Diameter=0.0159999999403954
+   RebarID=20d   Area=0.000314000005453825   Diameter=0.0199999995470047
+   RebarID=25d   Area=0.000491000008711815   Diameter=0.0250000001907349
+   RebarID=26d   Area=0.000531000029001236   Diameter=0.0259999997138977
+   RebarID=28d   Area=0.000616000043275356   Diameter=0.0280000017881393
+   RebarID=N12   Area=0.000113000009249449   Diameter=0.012000000333786
+   RebarID=N16   Area=0.000201000015431643   Diameter=0.0159999999403954
+   RebarID=N20   Area=0.000314000005453825   Diameter=0.0199999995470047
+   RebarID=N24   Area=0.000452000036997795   Diameter=0.024000000667572
+   RebarID=N28   Area=0.000616000043275356   Diameter=0.0280000017881393
+   RebarID=N32   Area=0.00080400006172657   Diameter=0.0319999998807907
+   RebarID=N36   Area=0.00102000001747131   Diameter=0.036000001001358
+ 
+END TABLE DATA

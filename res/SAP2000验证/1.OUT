@@ -1,0 +1,17 @@
+ SAP2000 v21.0.2 Ultimate 64-bit (Analysis Build 9720/64)                       
+ File: C:\Users\RichardoGu\Desktop\1\1.OUT                                      
+                                                                     
+                                                                       
+
+ D I S P L A C E M E N T   D E G R E E S   O F   F R E E D O M
+
+         (A) = Active DOF, equilibrium equation
+         (-) = Restrained DOF, reaction computed
+         (+) = Constrained DOF
+         (>) = External substructure DOF
+         ( ) = Null DOF
+
+  JOINTS              UX  UY  UZ  RX  RY  RZ
+       1 TO       3    A   +   +   +   +   +
+       4               -   -   -   -   -   -
+    NULL                                    

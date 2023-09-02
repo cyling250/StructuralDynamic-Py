@@ -32,7 +32,7 @@ if __name__ == "__main__":
     force = new_force @ np.linalg.inv(trans_mat_plus)
 
     response_figure([new_dpm[:, 0], new_dpm[:, 1], new_dpm[:, 2]],
-                    [["Shear1", "#0080FF", "-"], ["Shear2", "#000000", "--"], ["Shear3", "red", "-"]],
+                    [["Layer1", "#0080FF", "-"], ["Layer2", "#000000", "--"], ["Layer3", "red", "-"]],
                     x_tick=8, y_tick=0.03, x_length=40,
                     delta_time=delta_time, save_file="6.2.2_6.svg")
     hysteresis_figure([dpm[:, 0], force[:, 0]], x_tick=0.02, y_tick=4e2, save_file="6.2.2_7.svg")
@@ -45,7 +45,7 @@ if __name__ == "__main__":
     dpm1 = cen_dpm @ trans_mat
     force1 = cen_force @ np.linalg.inv(trans_mat_plus)
     response_figure([cen_dpm[:, 0], cen_dpm[:, 1], cen_dpm[:, 2]],
-                    [["Shear1", "#0080FF", "-"], ["Shear2", "#000000", "--"], ["Shear3", "red", "-"]],
+                    [["Layer1", "#0080FF", "-"], ["Layer2", "#000000", "--"], ["Layer3", "red", "-"]],
                     x_tick=8, y_tick=0.03, x_length=40,
                     delta_time=delta_time, save_file="6.2.2_10.svg")
     hysteresis_figure([dpm1[:, 0], force1[:, 0]], x_tick=0.02, y_tick=4e2, save_file="6.2.2_11.svg")

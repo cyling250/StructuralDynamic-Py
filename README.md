@@ -1,14 +1,4 @@
-# Python在结构动力学中的应用（StructuralDynamic-Py）
-
-<!--TODO 添加目录-->
-<style>
-.center {
-width: auto;
-display: table;
-margin-left: auto;
-margin-right: auto;
-}
-</style>
+# Python在结构动力计算中的应用（StructuralDynamic-Py）
 
 ## 1 说明
 
@@ -154,16 +144,5 @@ parts文件夹下的文件命名规则为：按照书中出现的例子进行编
 | 对应章节  |         描述         |           对应文件或函数           |
 |:-----:|:------------------:|:---------------------------:|
 | 7.3.3 | 自定义ABAQUS-Python函数 | [absqus.py](libs/abaqus.py) |
-
-</div>
-
-
-### 3.6 第八章
-
-<div class="center">
-
-| 对应章节  |        描述         |               对应文件或函数                |
-|:-----:|:-----------------:|:------------------------------------:|
-| 8.1.1 | 支持向量机(SVM)鸢尾花分类任务 | [8.1.1_1.py](parts/part8/8.1.1_1.py) |
 
 </div>

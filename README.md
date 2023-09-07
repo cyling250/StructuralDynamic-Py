@@ -144,17 +144,27 @@ parts文件夹下的文件命名规则为：按照书中出现的例子进行编
 | 对应章节  |         描述         |           对应文件或函数           |
 |:-----:|:------------------:|:---------------------------:|
 | 7.3.3 | 自定义ABAQUS-Python函数 | [absqus.py](libs/abaqus.py) |
-
+</div>
 
 ### 3.6 第八章
 
 <div class="center">
 
-| 对应章节  |        描述         |               对应文件或函数                |
-|:-----:|:-----------------:|:------------------------------------:|
-| 8.1.1 | 支持向量机(SVM)鸢尾花分类任务 | [8.1.1_1.py](parts/part8/8.1.1_1.py) |
-| 8.1.2 |  随机森林(RF)鸢尾花分类任务  | [8.1.1_2.py](parts/part8/8.1.1_2.py) |
-| 8.1.3 | XGBoost波士顿房价回归任务  | [8.1.1_3.py](parts/part8/8.1.1_3.py) |
+| 对应章节  |                 描述                 |                               对应文件或函数                               |
+|:-----:|:----------------------------------:|:-------------------------------------------------------------------:|
+| 8.1.1 |         支持向量机(SVM)鸢尾花分类任务          |         [SVM_iris:</br>8.1.1_1.py](parts/part8/8.1.1_1.py)          |
+| 8.1.1 |          随机森林(RF)鸢尾花分类任务           |          [RF_iris:</br>8.1.1_2.py](parts/part8/8.1.1_2.py)          |
+| 8.1.1 |          XGBoost波士顿房价回归任务          |      [XGBoost_boston:</br>8.1.1_3.py](parts/part8/8.1.1_3.py)       |
+| 8.1.2 |            ANN波士顿房价回归任务            |        [ANN_boston:</br>8.1.2_1.py](parts/part8/8.1.2_1.py)         |
+| 8.1.3 |      卷积神经网络(CNN)模型示例-Pytorch       |         [CNN_model:</br>8.1.3_1.py](parts/part8/8.1.3_1.py)         |
+| 8.1.3 |    长短期记忆神经网络(LSTM)模型示例-Pytorch     |        [LSTM_model:</br>8.1.3_2.py](parts/part8/8.1.3_2.py)         |
+| 8.2.3 |             数据清洗-重复值处理             |   [Data_clean_duplicates:</br>8.2.3_1.py](parts/part8/8.2.3_1.py)   |
+| 8.2.3 |             数据清洗-缺失值处理             |     [Data_clean_fillna:</br>8.2.3_2.py](parts/part8/8.2.3_2.py)     |
+| 8.2.3 |             数据清洗-异常值处理             |     [Data_clean_dropna:</br>8.2.3_3.py](parts/part8/8.2.3_3.py)     |
+| 8.2.4 | 10折交叉验证(10-folds cross-validation) | [10-folds cross-validation:</br>8.2.4_1.py](parts/part8/8.2.4_1.py) |
+| 8.3.7 |         SVM输电线路脱冰跳跃高度预测任务          |   [SVM_transmission line:</br>8.3.7_1.py](parts/part8/8.3.7_1.py)   |
+| 8.3.7 |         随机森林输电线路脱冰跳跃高度预测任务         |   [RF_transmission line:</br>8.3.7_2.py](parts/part8/8.3.7_2.py)    |
+| 8.3.7 |       XGBoost输电线路脱冰跳跃高度预测任务        | [XGBoost_transmission line:</br>8.3.7_3.py](parts/part8/8.3.7_3.py) |
 
 
 

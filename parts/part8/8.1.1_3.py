@@ -11,8 +11,8 @@ dataset=dataset.dropna()
 data = dataset.iloc[:, 0:13]
 target = dataset.iloc[:, 13]
 X_train, X_test, y_train, y_test = train_test_split(data, target, test_size=0.3, random_state=3)  # 划分训练集和测试集
-model = xgb.XGBRegressor()  # 搭建机器学习算法svm
-model.fit(X_train, y_train)  # 训练svm
+model = xgb.XGBRegressor()  # 搭建机器学习算法XGBoost
+model.fit(X_train, y_train)  # 训练XGBoost
 y_pred = model.predict(X_test)  # 预测结果
 print("平均绝对误差：", mean_absolute_error(y_test, y_pred))
 print("均方误差：", mean_squared_error(y_test, y_pred))

@@ -163,8 +163,8 @@ parts文件夹下的文件命名规则为：按照书中出现的例子进行编
 | 8.2.3 |             数据清洗-异常值处理             |     [Data_clean_dropna:</br>8.2.3_3.py](parts/part8/8.2.3_3.py)     |
 | 8.2.4 | 10折交叉验证(10-folds cross-validation) | [10-folds cross-validation:</br>8.2.4_1.py](parts/part8/8.2.4_1.py) |
 | 8.3.7 |         SVM输电线路脱冰跳跃高度预测任务          |   [SVM_transmission line:</br>8.3.7_1.py](parts/part8/8.3.7_1.py)   |
-| 8.3.7 |         随机森林输电线路脱冰跳跃高度预测任务         |   [RF_transmission line:</br>8.3.7_2.py](parts/part8/8.3.7_2.py)    |
-| 8.3.7 |       XGBoost输电线路脱冰跳跃高度预测任务        | [XGBoost_transmission line:</br>8.3.7_3.py](parts/part8/8.3.7_3.py) |
+| 8.3.8 |         随机森林输电线路脱冰跳跃高度预测任务         |   [RF_transmission line:</br>8.3.7_2.py](parts/part8/8.3.7_2.py)    |
+| 8.3.9 |       XGBoost输电线路脱冰跳跃高度预测任务        | [XGBoost_transmission line:</br>8.3.7_3.py](parts/part8/8.3.7_3.py) |
 
 
 
